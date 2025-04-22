@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pak Restaurant Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 3rem;
+      color: #f5c518;
+      margin-bottom: 30px;
+    }
+
+    .menu-category {
+      margin-bottom: 20px;
+    }
+
+    .menu-category h2 {
+      font-size: 1.8rem;
+      color: #f5c518;
+      border-bottom: 2px solid #f5c518;
+      margin-bottom: 10px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item span {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .menu-item span {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="menu-container">
+      <h1>Pak Restaurant</h1>
+
+      <div class="menu-category">
+        <h2>Starters</h2>
+        <div class="menu-item"><span>Chicken Corn Soup</span> <span>Rs. 250</span></div>
+        <div class="menu-item"><span>Spring Rolls</span> <span>Rs. 200</span></div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Main Course</h2>
+        <div class="menu-item"><span>Chicken Biryani</span> <span>Rs. 400</span></div>
+        <div class="menu-item"><span>Beef Karahi</span> <span>Rs. 800</span></div>
+        <div class="menu-item"><span>Chicken Handi</span> <span>Rs. 750</span></div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Drinks</h2>
+        <div class="menu-item"><span>Mango Shake</span> <span>Rs. 180</span></div>
+        <div class="menu-item"><span>Soft Drink</span> <span>Rs. 100</span></div>
+      </div>
+
+      <div class="menu-category">
+        <h2>Desserts</h2>
+        <div class="menu-item"><span>Gulab Jamun</span> <span>Rs. 120</span></div>
+        <div class="menu-item"><span>Ice Cream</span> <span>Rs. 150</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
